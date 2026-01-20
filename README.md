@@ -6,4 +6,4 @@ This is a repository of input scripts and associated documents that Dr. Juan Men
 * Restartmaker.py: This is a file that creates restart input scripts for an adjustable range of atomic molar fraction (xi) values, temperatures, and timestep (dt) values. Restart scripts run previous simulations where they left off, using the "write_restart" command in LAMMPS.
 * batch_submission_restarts.py and batch_submission_300_900K.py: These are python scripts that run restart and input scripts. When using, make sure the range of xi values, temperatures, and dt values match the ranges in the input and restart scripts. Encoded within these files are the number of cores to be used, the time limit, and the partition and qos styles.
 
-The LAMMPS input scripts 
+The LAMMPS input scripts use a package called MXE, developed by Dr. Juan Mendez and Dr. Mauricio Ponga (see Computer Physics Communications 260, 2021 (2020)). MXE contains the physics used in diffusive molecular dynamics (DMD). MXE must be installed in the same place as all other LAMMPS packages in order for the simulation to run properly.
