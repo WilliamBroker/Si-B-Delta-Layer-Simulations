@@ -11,7 +11,7 @@ import os
 import numpy as np
 
 parent_dir = os.getcwd()
-width = 2
+
 for width in np.arange(1,2.5,0.5):
     for xi in np.arange(0.2,1.2,0.2):
         xi = round(xi,2)
@@ -43,4 +43,5 @@ for width in np.arange(1,2.5,0.5):
                 
                 print(f'Job in.{xi}.{temp}.{dt0}.{width}.mxe_mt submitted')
     
+
 os.chdir(parent_dir)
