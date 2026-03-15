@@ -7,4 +7,5 @@ This is a repository of input scripts and associated documents that Dr. Juan Men
 * batch_submission_restarts_width.py and batch_submission_300_900K_width.py: These are python scripts that run restart and input scripts. When using, make sure the range of xi values, temperatures, and dt values match the ranges in the input and restart scripts. Encoded within these files are the number of cores to be used, the time limit, and the partition and qos styles.
 * SiBGraphing.ipynb: This is a python notebook to create graphs of atomic molar concentration of Boron vs particle positions for a simulation at a certain timestep.
 * SimulationRenderer.py: This is a python script that uses the Ovito python package to create pretty renderings of our simulation, equipped with a graph of atomic molar concentration vs. y-position.
+
 The LAMMPS input scripts use a package called MXE, developed by Dr. Juan Mendez and Dr. Mauricio Ponga (see Computer Physics Communications 260, 2021 (2020)). MXE contains the physics used in diffusive molecular dynamics (DMD). MXE must be installed in the same place as all other LAMMPS packages in order for the simulation to run properly.
